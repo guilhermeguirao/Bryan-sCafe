@@ -1,0 +1,191 @@
+html {
+  font-family: 'Proxima Nova', sans-serif;
+}
+
+body {
+  background-color: #ff6f4332;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+
+}
+
+html, body{
+  height: 100%;
+
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 100%;
+  height: auto;
+  padding: 7%;
+
+}
+
+
+.menu-section {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.menu-section h2 {
+  color: #b80671;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width:100%;
+  background-color: #b8067113;
+  width: auto;
+}
+
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: center;
+  text-align: center;
+  padding: 0 10px 0 10px;
+}
+
+.menu-section img {
+  width: 170px;
+  height: 80px;
+
+}
+
+.card-price {
+  font-weight: 800;
+  
+}
+
+.card-text {
+  text-align: center;
+  font-size: 14px;
+  width: 150px;
+  padding: 0 25px 0 25px;
+  background-color: #f9f2f220;
+  border-radius: 10px;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  padding: 5px;
+  margin: 0 20px 0 20px;
+}
+
+.meals {
+  border: 1px dotted #b806713e;
+  padding: 0;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px 2px #b8067118;
+}
+
+.card-img-top {
+  border: 5px solid #ff655d3a;
+  margin: 5px 5px 5px 5px;
+  border-radius: 15px;
+}
+
+.beverage-cards {
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+
+.beverage-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+ 
+}
+
+.coffee,
+.other {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px dotted #b8067134;
+  box-shadow: 0 12px 46px #b8067134;
+  background-color: #f6585025;
+  margin: 0 10px 20px 10px;
+  height: auto;
+}
+
+
+.beverage-cards .card-text {
+  color:#f65750;
+  font-weight: 900;
+  text-align: justify;
+}
+
+footer {
+  position: relative;
+  background-color: #f65750;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  body {
+    margin: 0;
+    width: 100%;
+  }
+  .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      line-height: 80%;
+  }
+
+  .mb-3 {
+    flex-direction: row;
+    width: 80%;
+    box-sizing: border-box;
+  }
+
+  .card-body {
+      width: 100%;
+      background-color: #f6585013;
+      border: 5px solid #f6585006;
+      margin: 5px 5px 5px 15px;
+      font-size: 16px;
+      border-radius: 15px;
+  }
+
+  .beverage-cards {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      box-sizing: border-box;
+  }
+
+  .coffee, .other {
+      width: 100%;
+      padding-bottom: 15px;
+      box-sizing: border-box;
+  }
+
+  .meals {
+    padding-bottom: 25px;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}

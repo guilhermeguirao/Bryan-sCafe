@@ -1,0 +1,40 @@
+html {
+  font-family: 'Proxima Nova', sans-serif;
+}
+
+body {
+  background-color: #ff6f4332;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+}
+
+h1 {
+  color: #b80671
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 100%;
+  height: auto;
+  padding: 7%;
+}
+  
+footer {
+  background-color: #f65750;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  
+}
+
+  .policy-section {
+    margin: 50px;
+    padding-bottom: 15%;
+
+  }

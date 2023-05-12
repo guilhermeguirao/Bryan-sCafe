@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome to Bryan's Cafe - Contact Page</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.7.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/contact.css">
+  <link href="https://fonts.cdnfonts.com/css/proxima-nova-2" rel="stylesheet">
+
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <div id="nav-placeholder">
+    </div>
+  </header>
+
+  <!-- Contact Form and Branches -->
+  <div class="container col-sm-12">
+    <div class="main">
+      <div class=" form-section col-md-6">
+        <section class="contact-form">
+          <div class="title">
+            Contact Us
+          </div>
+          <form id="contactForm" action="#" method="post">
+            <div class="form-container row">
+              <div class="col-md-12">
+                <input type="text" name="firstName" placeholder="First Name" required>
+              </div>
+              <div class="col-md-12">
+                <input type="text" name="lastName" placeholder="Last Name" required>
+              </div>
+              <div class="col-md-12">
+                <input type="email" name="email" placeholder="Email Address" required>
+              </div>
+              <div class="col-md-12">
+                <input type="text" name="subject" placeholder="Message Subject" required>
+              </div>
+              <div class="col-md-12">
+                <textarea name="message" rows="5" placeholder="Message Body" required></textarea>
+              </div>
+              <div class="submit-btn col-md-12">
+                <button type="submit" class="btn">Submit</button>
+              </div>
+            </div>
+          </form>
+        </section>
+      </div>
+      <div class=" branches col-md-6">
+        <section>
+          <div class="title">
+          Branches
+          </div>
+          <ul id="branchList" class="branch-list"></ul>
+        </section>
+      </div>
+    </div>
+  </div>
+</body>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; <script>document.write(new Date().getFullYear())</script> Bryan's Cafe | <a href="privacy-policy.html" target="_blank" style="color: #ffffff;">Privacy Policy</a></p>
+      </div>
+      <script src="//code.jquery.com/jquery.min.js"></script>
+      <script src="js/branches.js"></script>
+      <script>
+        $.get("navbar.html", function(data){
+          $("#nav-placeholder").replaceWith(data);
+        });
+      </script>
+      <link rel="stylesheet" type="text/css" href="/styles/navbar.css"/>
+    </footer>
+
+  </html>
+  

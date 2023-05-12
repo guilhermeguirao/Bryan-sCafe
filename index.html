@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Bryan's Cafe - About Page</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.7.2/dist/css/bootstrap.min.css">
+  <link href="https://fonts.cdnfonts.com/css/proxima-nova-2" rel="stylesheet">
+
+</head>
+<body>
+<header>
+  <div id="nav-placeholder">
+  </div>
+</header>
+
+  <!-- Banner -->
+    <img src="/public/images/banner.avif" alt="Bryan's Café" class="banner">
+
+  <!-- About Section -->
+  <section class="about-section">
+    <img src="/public/images/image1.jpg" alt="About Bryan's Café" class="about-image">
+    <div class="about-text">
+      <h2>About Bryan's Café</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at volutpat urna. Curabitur ut orci sem. Nulla euismod pellentesque ipsum, ut ullamcorper turpis. Morbi luctus ultricies enim, id congue mi ultricies sit amet.</p>
+    </div>
+  </section>
+
+  <!-- History Section -->
+  <main>
+  <section class="history-section">
+    <div class="history-text">
+      <h2>Our History</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at volutpat urna. Curabitur ut orci sem. Nulla euismod pellentesque ipsum, ut ullamcorper turpis. Morbi luctus ultricies enim, id congue mi ultricies sit amet.</p>
+    </div>
+    <img src="/public/images/image2.jpg" alt="History of Bryan's Café" class="history-image">
+  </section>
+</main>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; <script>document.write(new Date().getFullYear())</script> Bryan's Cafe | <a href="privacy-policy.html" target="_blank" style="color: #ffffff;">Privacy Policy</a></p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.7.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./styles/index.css" /> 
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <script>
+    $.get("navbar.html", function(data){
+      $("#nav-placeholder").replaceWith(data);
+    });
+</script>
+<link rel="stylesheet" type="text/css" href="/styles/navbar.css"/>
+</body>
+</html>
+
